@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ru">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#faf9f6"><meta name="description" content="Разберись с массивами вместе с Кото. Простые объяснения §3–6, анимации, алгоритмы на Pascal и проверка твоих программ."><title>Кото · Массивы по полочкам</title><link rel="icon" href="./favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="./style.css"></head>
+<body>
+<div class="shell">
+<aside class="sidebar" id="sidebar">
+ <a href="#lesson-3" class="brand" aria-label="Кото — к началу курса"><span class="brand-icon">к<span>о</span></span><span>кото<span class="brand-dot">.</span><small>понятно про код</small></span></a>
+ <div class="course-label">ТВОЙ МАРШРУТ <span>4 урока</span></div><nav id="lesson-nav" aria-label="Параграфы курса"></nav>
+ <div class="side-note"><span class="note-spark">✦</span><p>Сначала пойми.<br>Потом напиши.<br><strong>И всё получится.</strong></p></div>
+ <div class="progress-box"><div><span>Твой прогресс</span><b id="progress-percent">0%</b></div><div class="progress-track"><i id="progress-bar"></i></div><small id="progress-label">0 из 12 шагов закреплено</small></div>
+ <button class="source-link" id="source-button"><span>▤</span> По учебнику · 10 класс <span>↗</span></button>
+</aside>
+<div class="workspace">
+ <header class="topbar"><button class="menu-button" id="menu-button" aria-label="Открыть меню уроков" aria-expanded="false">☰</button><div class="breadcrumb">Информатика <span>/</span> <b>Массивы</b></div><div class="top-actions"><span class="save-status"><i></i> Прогресс сохраняется</span><button class="help-button" id="help-button"><span>?</span> Спросить Кото</button></div></header>
+ <main id="main">
+  <section class="hero">
+   <div class="hero-copy"><div class="eyebrow"><span class="tiny-dot"></span> PASCALABC.NET <i></i> §3–6</div><h1>Массивы —<br>по полочкам<span>.</span></h1><p>Разбираемся вместе с Кото.<br>От первой ячейки до собственной программы.</p><div class="hero-meta"><span>◷ В своём темпе</span><span>⌘ Практика с проверкой</span></div></div>
+   <div class="hero-art"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><span class="art-spark spark-one">✦</span><span class="art-spark spark-two">+</span><span class="floating-code code-one">a[3] = 8</span><div id="hero-mascot" class="mascot-large"></div><div class="mascot-caption"><i></i> Кото <span>твой проводник в коде</span></div><span class="floating-code code-two">[ 7, 3, <b>8</b>, 2, 5 ]</span></div>
+  </section>
+  <section class="lesson-heading"><div><div class="section-kicker" id="lesson-kicker"></div><h2 id="lesson-title"></h2><p id="lesson-subtitle"></p></div></section>
+  <div class="lesson-tabs" role="tablist" aria-label="Этапы урока"><button role="tab" id="tab-theory" data-tab="theory"><span>01</span> Понять</button><button role="tab" id="tab-algorithm" data-tab="algorithm"><span>02</span> Разобрать алгоритм</button><button role="tab" id="tab-practice" data-tab="practice"><span>03</span> Попрактиковаться</button></div>
+  <div id="lesson-content" role="tabpanel" tabindex="-1"></div>
+  <footer><span>Маленькие шаги. Большой «я понял!»</span><span>Кото · учебная лаборатория</span></footer>
+ </main>
+</div>
+</div>
+<div class="toast" id="toast" role="status"></div>
+<dialog id="help-dialog" class="help-dialog"><div class="dialog-head"><b>На связи Кото</b><button class="icon-button" data-close="help-dialog" aria-label="Закрыть">×</button></div><div class="help-mascot" id="help-mascot"></div><p class="help-intro">Не спешим. Сейчас разложим всё по полочкам.</p><div class="help-options"><button data-help="simpler">Объясни ещё проще</button><button data-help="pitfall">Где легко ошибиться?</button><button data-help="code">Как писать программу?</button><button data-help="error">Помоги с последней проверкой</button></div><div id="help-answer" class="help-answer" aria-live="polite">Выбери, с чем помочь. Мои подсказки относятся к текущему уроку.</div><small>Кото — учебный помощник с готовыми объяснениями и подсказками.</small></dialog>
+<dialog id="source-dialog" class="source-dialog"><div class="dialog-head"><b>О курсе</b><button class="icon-button" data-close="source-dialog" aria-label="Закрыть">×</button></div><h2>По твоему учебнику</h2><p>Курс составлен по §3–6 учебника «Информатика. 10 класс» (В. М. Котов, А. И. Лапо, Ю. А. Быкадоров, Е. Н. Войтехович; Минск: Народная асвета, 2020). Объяснения и тренировочные задания адаптированы для самостоятельной работы.</p><ul><li>§3 · Структурированный тип данных массив · с. 22–30</li><li>§4 · Арифметические действия над элементами · с. 31–36</li><li>§5 · Поиск элементов с заданными свойствами · с. 36–48</li><li>§6 · Максимальный и минимальный элементы · с. 48–53</li></ul><p>Программы запускаются локально в учебном интерпретаторе Pascal. Поддерживается синтаксис, необходимый для задач курса; подключение модулей PascalABC.NET и GraphABC недоступно. Круговая диаграмма и гистограмма показаны средствами сайта.</p><p>Код и прогресс остаются в этом браузере. Все пути относительные: сайт работает и в подпапке GitHub Pages.</p><button class="secondary" id="export-progress">Скачать мой прогресс</button></dialog>
+<script type="module" src="./app.js"></script>
+</body></html>

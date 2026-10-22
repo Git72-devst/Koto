@@ -1,0 +1,3 @@
+import {runPascal} from './pascal.js';
+const tokens=s=>String(s).trim().split(/\s+/).filter(Boolean);
+self.onmessage=({data})=>{const results=[];for(const test of data.tests){try{const result=runPascal(data.source,test.input,{maxSteps:150000});const got=tokens(result.output),want=tokens(test.expected);results.push({label:test.label,input:test.input,expected:test.expected,actual:result.output,passed:got.length===want.length&&got.every((v,i)=>v===want[i]),steps:result.steps});}catch(e){results.push({label:test.label,input:test.input,expected:test.expected,actual:'',passed:false,error:e.message});}}self.postMessage({results});};
