@@ -9,3 +9,9 @@
 @media(max-width:650px){.hero{display:block;position:relative;min-height:305px;overflow:hidden;margin-right:-20px;padding-right:20px}.hero-copy{position:relative;z-index:2;width:100%}.hero-copy h1{font-size:clamp(30px,8.5vw,40px);line-height:1.12;letter-spacing:-1.7px;max-width:290px;white-space:nowrap;margin-bottom:17px}.hero-copy p{max-width:190px}.hero-meta{position:relative;z-index:3}.hero-art{position:absolute;right:18px;top:132px;width:180px;height:190px;transform:scale(.53);transform-origin:right center;margin:0;z-index:1}.hero-art .code-one{top:-24px;left:-37px}.hero-art .code-two{bottom:-1px;right:-25px}.hero-art .mascot-caption{bottom:-28px;left:-19px}.hero-art .orbit-two{width:265px;height:240px}.hero-art .spark-one{right:-10px}.hero-art .spark-two{left:-32px}.concepts-4{grid-template-columns:1fr}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
 @media(max-width:650px){.concepts-4{gap:0}.concept{padding:22px 0 22px 34px}.concept h3{font-size:17px;margin-bottom:10px}.concept p{font-size:14px;line-height:1.85}.concept-number{font-size:11px;top:26px}}
+
+.transfer-note{font-size:12px;line-height:1.8;color:#826a9a;background:#f1ebf8;border-left:3px solid #b69bce;border-radius:0 8px 8px 0;padding:12px 15px;margin:15px 0}
+.transfer-note b{display:block;color:#70578a;font-size:10px;letter-spacing:.2px;margin-bottom:4px;font-weight:600}
+.practice-note{font-size:10px;line-height:1.8;color:#9b8aab;margin:13px 0 0}
+.practice-actions [hidden]{display:none}
+@media(max-width:650px){.transfer-note{font-size:11px;padding:11px 13px}.practice-note{font-size:9px}}
